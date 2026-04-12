@@ -4,10 +4,10 @@
 <template>
     <div class="d-flex w-100 justify-content-center tam  align-items-center">
         <ul class="nostyle w-100 d-flex justify-content-around">
-            <li><p class="text-light"><span class="hash">#</span>home</p></li>
-            <li><p class="text-light"><span class="hash">#</span>projetos</p></li>
-            <li><p class="text-light"><span class="hash">#</span>sobre</p></li>
-            <li><p class="text-light"><span class="hash">#</span>contatos</p></li>
+            <li><p class="col"><span class="hash">#</span>home</p></li>
+            <li><p class="col"><span class="hash">#</span>projetos</p></li>
+            <li><p class="col"><span class="hash">#</span>sobre</p></li>
+            <li><p class="col"><span class="hash">#</span>contatos</p></li>
         </ul>
     </div>
 </template>
@@ -20,6 +20,12 @@
         list-style: none;
         margin-top: 1%;
         margin-bottom: 0;
+    }
+    .col {
+        color: white !important;
+    }
+    .col:hover {
+        color:  rgba(199, 120, 221, 1) !important;
     }
     .tam {
         margin: 0;

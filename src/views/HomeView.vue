@@ -81,7 +81,8 @@ onUnmounted(() => {
                     <div class="linha"></div>   
                 </div>
                 <div class="w-100 d-flex push2 justify-content-around align-items-center"> 
-                    <div class="projeto d-flex flex-column ">
+                    <a class="prog" href="https://reformacasa.facom.ufu.br/">
+                        <div class="projeto d-flex flex-column ">
                         <img class="projpic" src="../assets/ct.png">
                         <div class="stack d-flex justify-content-center">
                             <p class="sub no3">HTML CSS Vue.js Node.js</p>
@@ -92,7 +93,9 @@ onUnmounted(() => {
                             <div class="chama d-flex text-light justify-content-center">Ativo</div>
                         </div>  
                     </div>
-                    <div class="projeto d-flex flex-column ">
+                    </a>
+                    <a class="prog" href="https://casadaeternapaz.onrender.com/">
+                         <div class="projeto d-flex flex-column ">
                         <img class="projpic" src="../assets/casa.png">
                         <div class="stack d-flex justify-content-center">
                             <p class="sub no3">HTML CSS Vue.js Node.js</p>
@@ -103,6 +106,7 @@ onUnmounted(() => {
                             <div class="chama d-flex text-light justify-content-center">Ativo</div>
                         </div>  
                     </div>
+                    </a>
                 </div>
                  <div  class="w-100 d-flex push2 align-items-center justify-content-between">
                     <p class="text-light no2"><span class="hash">#</span>skills</p>
@@ -347,6 +351,13 @@ onUnmounted(() => {
     width: 30%;
     border: 2px solid rgba(171, 178, 191, 1);
     margin-bottom: 2%;
+         transition: all 0.3s ease;
+}
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 
+  0 1px 2px rgba(199, 120, 221, 1),
+  0 4px 10px rgba(199, 120, 221, 1);
 }
 .detail {
     width: 22%;
@@ -375,10 +386,21 @@ onUnmounted(() => {
     width: 100%;
     
 }
+.prog {
+     width: 25%;
+     text-decoration: none;
+}
 .projeto {
-    width: 25%;
+    width: 100%;
     border: 2px solid rgba(171, 178, 191, 1);
+     transition: all 0.3s ease;
     
+}
+.projeto:hover {
+    transform: scale(1.1);
+    box-shadow: 
+  0 1px 2px rgba(199, 120, 221, 1),
+  0 4px 10px rgba(199, 120, 221, 1);
 }
 .projpic {
     width: 100%;
@@ -503,7 +525,7 @@ onUnmounted(() => {
     }
     .sub {
         color: rgba(171, 178, 191, 1);
-     
+        font-size:1.4vw;
     }
     .sic2 {
         width: 7.5%;
@@ -625,6 +647,7 @@ onUnmounted(() => {
     border: 2px solid rgba(171, 178, 191, 1);
     margin-bottom: 2%;
 }
+    
         .icone {
           width: 10%;
         }
@@ -717,10 +740,10 @@ onUnmounted(() => {
         .size2{
             width: 100% !important;
         }
-         
-        .projeto {
+         .prog {
             width: 45%;
-        }
+         }
+        
         .metade {
             width: 70%;
         }
