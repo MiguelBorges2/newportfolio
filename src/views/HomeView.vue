@@ -1,0 +1,853 @@
+<script setup>
+import Navbar from '@/component/Navbar.vue';
+import { ref, onMounted, onUnmounted } from 'vue'
+const larguraTela = ref(window.innerWidth)
+
+function atualizalarg(){
+    larguraTela.value = window.innerWidth
+}
+
+onMounted(() => {
+    window.addEventListener('resize', atualizalarg)
+})
+onUnmounted(() => {
+  window.removeEventListener('resize', atualizalarg)
+})
+</script>
+   
+<template>
+    <div class="d-flex justify-content-center big w-100">
+        <div v-if="larguraTela>1024"class="d-flex  sic2 flex-column justify-content-around">
+             <img class="ornamento" src="../assets/dots.svg">
+             <img class="ornamento" src="../assets/rectangle.svg">
+        </div>
+        <div class="d-flex size2  main flex-column justify-content-start align-items-center">
+            <Navbar></Navbar> 
+            <div v-if="larguraTela>1024" class="d-flex w-100 justify-content-center push align-items-center">
+             <div class="d-flex   size align-items-start flex-column">
+                <p class="text-light push4 hero">Miguel Borges de Rezende Costa</p>
+                <p class=" color push4 hero">Desenvolvedor full-stack</p>
+                <span class="sub push4">
+                    Criando aplicações Web versáteis e aplicativos mobiles...
+                </span>
+                <button class="but push4 text-light">
+                    Entre em Contato!
+                </button>
+             </div>
+                <div class="d-flex   img justfy-content-center">
+                    <img class="log " src="../assets/Logo.svg">
+                    <img class="pic " src="../assets/pic2.png">
+                    <img class="log4 " src="../assets/dots.svg">
+                </div>
+            </div>
+            <div v-if="larguraTela<1024" class="d-flex w-100 flex-column justify-content-start  align-items-center">
+             <div class="d-flex  chao size align-items-start flex-column">
+                <p class="text-light push11  push4 hero">Miguel Borges de Rezende Costa</p>
+                <p class=" color push12 push4 hero">Desenvolvedor full-stack</p>
+                <span class="sub push4">
+                    Criando aplicações Web versáteis e aplicativos mobiles...
+                </span>
+                
+             </div>
+                <div class="d-flex img justfy-content-center">
+                    <img class="log " src="../assets/Logo.svg">
+                    <img class="pic " src="../assets/pic2.png">
+                    <img class="log4 " src="../assets/dots.svg">
+                </div>
+                 <div v-if="larguraTela<1024"  class="w-100 d-flex chao2  justify-content-center">
+                    <span class="trab d-flex bg-dark justify-content-start">
+                        <div class="square"></div>
+                        <p class="text-light tips">Procurando emprego!</p>
+                    </span>
+              </div>
+            </div>
+             <div v-if="larguraTela>1024"  class="w-100 d-flex push2  justify-content-end">
+                    <span class="trab d-flex bg-dark justify-content-between">
+                        <div class="square"></div>
+                        <p class="text-light tips">Procurando emprego!</p>
+                    </span>
+              </div>
+            <div class="metade d-flex flex-column justify-content-center align-items-center">
+                <div class="quote-box">
+                    <p class="text-light no">A tecnologia por si só não muda o mundo. São as pessoas que a constroem, com propósito, que fazem isso.</p>
+                </div>
+                <div class="quote-box2">
+                    <p class="text-light no">-Satya Nadella</p>
+                </div>
+            </div>
+            <div class="w-100 push3 d-flex flex-column">
+                <div class="w-100 d-flex align-items-center justify-content-between">
+                    <p class="text-light no2"><span class="hash">#</span>projetos</p>
+                    <div class="linha"></div>   
+                </div>
+                <div class="w-100 d-flex push2 justify-content-around align-items-center"> 
+                    <div class="projeto d-flex flex-column ">
+                        <img class="projpic" src="../assets/ct.png">
+                        <div class="stack d-flex justify-content-center">
+                            <p class="sub no3">HTML CSS Vue.js Node.js</p>
+                        </div>
+                         <div class="stack2 d-flex justify-content-center flex-column align-items-center">
+                            <p class="text-light no3 sic ">Reforma Na palma da mão</p>
+                            <p class=" sub2">Plataforma Web informativa sobre reformas. Desenvolvido em parceria com a FAU da UFU</p>
+                            <div class="chama d-flex text-light justify-content-center">Ativo</div>
+                        </div>  
+                    </div>
+                    <div class="projeto d-flex flex-column ">
+                        <img class="projpic" src="../assets/casa.png">
+                        <div class="stack d-flex justify-content-center">
+                            <p class="sub no3">HTML CSS Vue.js Node.js</p>
+                        </div>
+                         <div class="stack2 d-flex justify-content-center flex-column align-items-center">
+                            <p class="text-light no3 sic ">Site Imersivo (RPG de Mesa)</p>
+                            <p class="sub2 ">Aplicação web imersiva, simulando recrutamento para um culto fictício.</p>
+                            <div class="chama d-flex text-light justify-content-center">Ativo</div>
+                        </div>  
+                    </div>
+                </div>
+                 <div  class="w-100 d-flex push2 align-items-center justify-content-between">
+                    <p class="text-light no2"><span class="hash">#</span>skills</p>
+                    <div class="linha"></div>   
+                </div>
+                <div v-if="larguraTela > 1024"  class="w-100 d-flex justify-content-around ">
+                    <img class="detail" src="../assets/group36.svg">
+                    <div class="w-50 d-flex align-items-around justify-content-between flex-wrap">
+                        <div class="skill ">
+                            <span class="text-light w-100 bott d-flex justify-content-center">
+                                Linguagens
+                            </span>
+                            <div class="d-flex flex-column align-items-start">
+                                <p class="color2">-JavaScript</p>
+                                <p class="color2">-Java</p>
+                                <p class="color2">-Python</p>
+                                <p class="color2">-C</p>
+                                <p class="color2">-C++</p>
+                                <p class="color2">-TypeScript</p>
+                            </div>
+                        </div>
+                        <div class="skill ">
+                            <span class="text-light w-100 bott d-flex justify-content-center">
+                                Database
+                            </span>
+                            <div class="d-flex flex-column align-items-start justify-content-center">
+                                <p class="color2">-MySQL</p>
+                                <p class="color2">-PostgreSQL</p>
+                                <p class="color2">-Mongo</p>
+                                <p class="color2">-SQLite</p>
+                            </div>
+                        </div>
+                        <div class="skill ">
+                            <span class="text-light w-100 bott d-flex justify-content-center">
+                                Outros
+                            </span>
+                            <div class="d-flex flex-column align-items-start">
+                                <p class="color2">-Node.js</p>
+                                <p class="color2">-HTML</p>
+                                <p class="color2">-CSS</p>
+                                <p class="color2">-BootStrap</p>
+                                <p class="color2">-Tailwind</p>
+                            </div>
+                        </div>
+                         <div class="skill ">
+                            <span class="text-light w-100 bott  d-flex justify-content-center">
+                                Frameworks
+                            </span>
+                            <div class="d-flex flex-column align-items-start">
+                                <p class="color2">-Vue.js</p>
+                                <p class="color2">-Express</p>
+                                <p class="color2">-SpringBoot</p>
+                                <p class="color2">-REACT</p>
+                                <p class="color2">-C++</p>
+                                <p class="color2">-TypeScript</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                 <div v-if="larguraTela < 1024"  class="w-100 d-flex justify-content-around rela">
+                    <div class="w-100 d-flex push30 align-items-around justify-content-between flex-wrap">
+                        <div class="skill ">
+                            <span class="text-light w-100 bott d-flex justify-content-center">
+                                Linguagens
+                            </span>
+                            <div class="d-flex flex-column align-items-start">
+                                <p class="color2">-JavaScript</p>
+                                <p class="color2">-Java</p>
+                                <p class="color2">-Python</p>
+                                <p class="color2">-C</p>
+                                <p class="color2">-C++</p>
+                                <p class="color2">-TypeScript</p>
+                            </div>
+                        </div>
+                        <div class="skill ">
+                            <span class="text-light w-100 bott d-flex justify-content-center">
+                                Database
+                            </span>
+                            <div class="d-flex flex-column align-items-start justify-content-center">
+                                <p class="color2">-MySQL</p>
+                                <p class="color2">-PostgreSQL</p>
+                                <p class="color2">-Mongo</p>
+                                <p class="color2">-SQLite</p>
+                            </div>
+                        </div>
+                        <div class="skill ">
+                            <span class="text-light w-100 bott d-flex justify-content-center">
+                                Outros
+                            </span>
+                            <div class="d-flex flex-column align-items-start">
+                                <p class="color2">-Node.js</p>
+                                <p class="color2">-HTML</p>
+                                <p class="color2">-CSS</p>
+                                <p class="color2">-BootStrap</p>
+                                <p class="color2">-Tailwind</p>
+                            </div>
+                        </div>
+                         <div class="skill ">
+                            <span class="text-light w-100 bott  d-flex justify-content-center">
+                                Frameworks
+                            </span>
+                            <div class="d-flex flex-column align-items-start">
+                                <p class="color2">-Vue.js</p>
+                                <p class="color2">-Express</p>
+                                <p class="color2">-SpringBoot</p>
+                                <p class="color2">-REACT</p>
+                                <p class="color2">-C++</p>
+                                <p class="color2">-TypeScript</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="w-100 d-flex push2 align-items-center justify-content-between">
+                    <p class="text-light no2"><span class="hash">#</span>Sobre mim</p>
+                    <div class="linha"></div>   
+                </div>
+                <div v-if="larguraTela > 1024" class="w-100 d-flex">
+                    <div class="meia push30">
+                        <p class="color2">Ola, eu sou o Miguel!</p>
+                        <p class="color2">Sou desenvolvedor full-stack formado em Ciência da Computação pela UFU, com experiência prática no desenvolvimento de aplicações web e APIs RESTful.</p>
+                        <p class="color2">Atuei como estagiário na Algar Telecom e como desenvolvedor full-stack júnior na Telek Sistemas, trabalhando com sistemas reais, integrações e comunicação entre serviços.</p>
+                        <p class="color2 push3">Trabalho principalmente com Vue.js no frontend e Node.js no backend, desenvolvendo soluções completas, modernas e focadas em performance e usabilidade.</p>
+                        <p class="color2 push3">Tenho experiência em projetos reais, incluindo uma plataforma desenvolvida em parceria com a UFU, além de aplicações web interativas.</p>
+                        <p class="color2 push3">Busco sempre entregar soluções bem estruturadas, eficientes e fáceis de manter.</p>
+                    </div>
+                    <div class="meia bisnaga">
+                        <img class="pic2 " src="../assets/tuts2.png">
+                        <img class="log2 " src="../assets/dots.svg">
+                        <img class="log3 " src="../assets/frame.svg">
+                    </div>
+                </div>
+                <div v-if="larguraTela < 1024" class="w-100 d-flex flex-column">
+                    <div class="w-100  chao3 push30">
+                        <p class="color2">Ola, eu sou o Miguel!</p>
+                        <p class="color2">Sou desenvolvedor full-stack formado em Ciência da Computação pela UFU, com experiência prática no desenvolvimento de aplicações web e APIs RESTful.</p>
+                        <p class="color2">Atuei como estagiário na Algar Telecom e como desenvolvedor full-stack júnior na Telek Sistemas, trabalhando com sistemas reais, integrações e comunicação entre serviços.</p>
+                        <p class="color2 push3">Trabalho principalmente com Vue.js no frontend e Node.js no backend, desenvolvendo soluções completas, modernas e focadas em performance e usabilidade.</p>
+                        <p class="color2 push3">Tenho experiência em projetos reais, incluindo uma plataforma desenvolvida em parceria com a UFU, além de aplicações web interativas.</p>
+                        <p class="color2 push3">Busco sempre entregar soluções bem estruturadas, eficientes e fáceis de manter.</p>
+                    </div>
+                    <div class="w-100 bisnaga">
+                        <img class="pic2 " src="../assets/tuts2.png">
+                        <img class="log2 " src="../assets/dots.svg">
+                        <img class="log3 " src="../assets/frame.svg">
+                    </div>
+                </div>
+                <div class="w-100 d-flex push2 align-items-center justify-content-start">
+                    <p class="text-light no2"><span class="hash">#</span>contato</p>
+                    <div class="linha"></div>   
+                </div>
+                <div v-if="larguraTela>1024" class="w-100 d-flex justify-content-between">
+                    <p class="color2 push3  self meia">Não exite em entrar em contato pelas redes sociais listadas ou dar uma olhada no meu GitHub!  </p>
+                    <div class="size7 boxe push10 d-flex flex-column  align-items-center">
+                        <div class="w-100  align-items-center d-flex">
+                            <img class="icone" src="../assets/email.svg">
+                            <p class="text-light m-0">miguel.costa@ufu.br</p>
+                        </div>
+                        <div class="w-100   align-items-center d-flex">
+                            <img class="icone" src="../assets/zapzap.svg">
+                            <p class="text-light m-0">(34) 98442-3034</p> 
+                        </div>
+                        <div class="w-100  align-items-center d-flex">
+                            <img class="icone" src="../assets/git.svg">
+                            <p class="text-light m-0">(34) 98442-3034</p>
+                        </div>
+                    </div>
+                </div>
+                <div v-if="larguraTela < 1024" class="w-100 d-flex justify-content-center flex-column align-items-center">
+                    <p class="color2 push3  self w-100">Não exite em entrar em contato pelas redes sociais listadas ou dar uma olhada no meu GitHub!  </p>
+                    <div class="size7 boxe push10 d-flex flex-column  align-items-center">
+                        <div class="w-100  align-items-center d-flex">
+                            <img class="icone" src="../assets/email.svg">
+                            <p class="text-light sic3 m-0">miguel.costa@ufu.br</p>
+                        </div>
+                        <div class="w-100   align-items-center d-flex">
+                            <img class="icone" src="../assets/zapzap.svg">
+                            <p class="text-light sic3  m-0">(34) 98442-3034</p> 
+                        </div>
+                        <div class="w-100  align-items-center d-flex">
+                            <img class="icone" src="../assets/git.svg">
+                            <p class="text-light sic3 m-0">(34) 98442-3034</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  v-if="larguraTela > 1024" class="d-flex sic2 flex-column justify-content-around">
+            <img class="ornamento" src="../assets/rectangle.svg">
+             <img class="ornamento2" src="../assets/dots.svg">
+             <img class="ornamento" src="../assets/dots.svg">
+        </div>  
+    </div>
+  
+</template>
+<style>
+.size7 {
+    width: 20%;
+}
+.push11 {
+    margin-top: 5%;;
+}
+.push12 {
+    margin-top: 0;
+}
+.self {
+    align-self: center;
+}
+.boxe {
+    border: 2px solid rgba(171, 178, 191, 1);
+}
+.icone {
+    width: 15%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.bisnaga {
+    position: relative;
+    width: 100%
+}
+.meia {
+    width: 50%;
+}
+.push4 {
+    margin-left: 5%;
+}
+.style {
+    list-style: none;
+}
+.push10 {
+    margin: 2%;
+}
+.color2 {
+    color: rgba(171, 178, 191, 1);
+    margin:0;
+}
+.bott {
+    border-bottom: 2px solid rgba(171, 178, 191, 1);
+}
+.skill {
+    width: 30%;
+    border: 2px solid rgba(171, 178, 191, 1);
+    margin-bottom: 2%;
+}
+.detail {
+    width: 22%;
+}
+.chama {
+    width: 40%;
+    background-color:  rgba(199, 120, 221, 1);
+    border-radius: 60px;
+    box-shadow: 0 0 10px rgba(199, 120, 221, 1);
+    margin: 1%;
+    padding: 1%;
+}
+.sic {
+    font-size: 1.2vw;
+}
+.push5 {
+    margin-left: 2%;
+}
+.stack {
+    width: 100%;
+    border-top: 2px solid rgba(171, 178, 191, 1);
+    border-bottom: 2px solid rgba(171, 178, 191, 1);
+    
+}
+.stack2 {
+    width: 100%;
+    
+}
+.projeto {
+    width: 25%;
+    border: 2px solid rgba(171, 178, 191, 1);
+    
+}
+.projpic {
+    width: 100%;
+    height: 10vw;
+    margin: 0 !important;
+    padding: 0;
+}
+.linha {
+    padding: 0.1%;
+    background-color: rgba(199, 120, 221, 1);
+    border-radius: 60px;
+    width: 88%;
+}
+.no {
+    margin: 0;
+}
+.no2 {
+    padding: 0;
+    margin-right: 1%;
+    margin-bottom: 0;
+    font-size: 1.3vw;
+}
+.no3 {
+    padding: 0;
+    margin: 3%;
+    
+}
+.quote-box {
+  margin-top: 8%;
+  position: relative;
+  border: 1px solid rgba(171, 178, 191, 1);
+  padding: 2%;
+  font-size: 1vw;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+}
+.quote-box2 {
+  align-self: end;
+  border: 1px solid rgba(171, 178, 191, 1);
+  padding: 1%;
+  font-size: 1vw;
+  border-radius: 2px;
+  color: #fff;
+}
+.quote-box::before {
+  content: "“";
+  position: absolute;
+  top: -18px;
+  left: 20px;
+
+  font-size: 40px;
+  color: #c9a44c;
+
+ /* mesma cor do fundo */
+  
+}
+.metade {
+    width:50%;
+}
+.quote-box::after {
+  content: "“";
+  position: absolute;
+  bottom: -40px;
+  right: 20px;
+
+  font-size: 40px;
+  color: #c9a44c;
+
+ /* mesma cor do fundo */
+  padding: 0 8px;
+}
+.chao {
+    margin-bottom: 28%;
+}
+.tips {
+    margin: 0;
+}
+ .push2 {
+    margin-top: 2%;
+ }
+ .push3 {
+    margin-top: 2%;
+ }
+ .push30 {
+    margin-top: 3%;
+ }
+    .trab {
+        width: 20%;
+        margin-right: 14%;
+        padding: 0.5%;
+        border: 1px solid rgba(171, 178, 191, 1)
+    }
+    .square {
+        background-color: rgba(199, 120, 221, 1);
+        width: 10%;
+         padding: 0%;
+
+    }
+    .img {
+        position: relative;
+        width: 50%;
+
+    }
+    .big {
+        height: 100%;
+        padding:0;
+        margin: 0 !important;
+        padding: 0;
+    }
+    .main {
+        background-color: rgba(40, 44, 51, 1);
+        
+       
+    }
+    .but {
+        background-color: rgba(40, 44, 51, 1);
+        border: 1px solid rgba(199, 120, 221, 1);
+        margin-top: 5%;
+        padding: 1.5%;
+        width: 30%;
+    }
+    .sub {
+        color: rgba(171, 178, 191, 1);
+     
+    }
+    .sic2 {
+        width: 7.5%;
+    }
+    .sub2 {
+        color: rgba(171, 178, 191, 1);
+        font-size: 1vw;
+        margin-top: 0;
+        margin-bottom: 2%;
+        text-align:start;
+        margin-left: 1%;
+        margin-right: 1%;
+        
+    }
+    .hero {
+        font-size: 2vw;
+    }
+    .push {
+        margin-top: 15%;
+    }
+    .sic2{
+        width: 7.5%;
+        margin: 0 !important;
+        padding:0;
+    }
+    .ornamento {
+        width: 50%;
+        margin: 0;
+    }
+    .ornamento2 {
+        width: 65%;
+        margin: 0;
+    }
+    .size2 {
+        width: 85%;
+        height: 100%;
+        margin: 0 !important;
+    }
+    .chao2 {
+        margin-top: 15%;
+    }
+    .color {
+        color: rgba(199, 120, 221, 1);
+    }
+    .size {
+        width: 50%;
+    }
+    .log {
+        width: 27%;
+        height:auto;
+         position: absolute;
+        margin: 0;
+        top: 50%;
+        left: 18%;
+        transform: translate(-1%, -60%);
+    }
+    .pic {
+        margin: 0;
+        width: 30%;
+        height: auto;
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 40%;
+        transform: translate(-10%, -65%);
+     
+    }
+    .chao3 {
+        margin-bottom: 50%;
+    }
+    .log2 {
+        margin: 0;
+        width: 12%;
+        height:auto;
+         position: absolute;
+        top: 30%;
+        left: 38%;
+        z-index: 9;
+        transform: translate(-50%, -50%);
+    }
+    
+    .log3 {
+        margin: 0;
+        width: 15%;
+        height:auto;
+         position: absolute;
+        top: 70%;
+        z-index: 11;
+        left: 70%;
+        transform: translate(-50%, -50%);
+    }
+    .log4 {
+        margin: 0;
+        width: 15%;
+        height:auto;
+         position: absolute;
+        top: 90%;
+        z-index: 11;
+        left: 72%;
+        transform: translate(-50%, -10%);
+    }
+    .pic2 {
+        margin: 0;
+        width: 43%;
+        height: auto;
+        position: absolute;
+        z-index: 10;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -48%);
+     
+    }
+    @media(max-width: 1024px){
+        .sic3 {
+            font-size: 2.2vw;
+        }
+        .skill {
+    width: 32%;
+    border: 2px solid rgba(171, 178, 191, 1);
+    margin-bottom: 2%;
+}
+        .icone {
+          width: 10%;
+        }
+        .pic2 {
+        margin: 0;
+        width: 30%;
+        height: auto;
+        position: absolute;
+        z-index: 10;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -95%);
+     
+    }
+    .log2 {
+        margin: 0;
+        width: 15%;
+        height:auto;
+         position: absolute;
+        top: 2%;
+        left: 38%;
+        z-index: 9;
+        transform: translate(-30%, -250%);
+    }
+    
+    .log3 {
+        margin: 0;
+        width: 15%;
+        height:auto;
+         position: absolute;
+        top: 90%;
+        z-index: 11;
+        left: 70%;
+        transform: translate(-60%, -90%);
+    }
+    .color2 {
+        font-size: 1.8vw;
+    }
+    .bott {
+        font-size: 2vw;
+    }
+        .linha {
+    padding: 0.1%;
+    background-color: rgba(199, 120, 221, 1);
+    border-radius: 60px;
+    width: 88%;
+}
+    .no2 {
+        font-size: 1.8vw;
+    }
+        .projpic {
+    width: 100%;
+    height: 22vw;
+    margin: 0 !important;
+    padding: 0;
+}
+.detail {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+.sub2 {
+        color: rgba(171, 178, 191, 1);
+        font-size: 1.7vw;
+        margin-top: 0;
+        margin-bottom: 2%;
+        text-align:start;
+        margin-left: 1%;
+        margin-right: 1%;
+        
+    }
+.sic {
+    font-size: 1.9vw;
+}
+.rela {
+    position: relative;
+}
+.log {
+        width: 32%;
+        height:auto;
+         position: absolute;
+        margin: 0;
+        top: 50%;
+        left: 18%;
+        transform: translate(-1%, -60%);
+    }
+        .size2{
+            width: 100% !important;
+        }
+         
+        .projeto {
+            width: 45%;
+        }
+        .metade {
+            width: 70%;
+        }
+        .pic {
+        margin: 0;
+        width: 45%;
+        height: auto;
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -65%);
+     
+    }
+    .hero {
+        font-size: 4.3vw;
+    }
+    .size {
+        width: 100%;
+    }
+    .sub {
+        font-size: 2.2vw;
+    }
+    .trab {
+        margin-right: 0;
+        width: 42%;
+    }
+    .tips {
+        font-size: 2.8vw;
+        margin-right: 2%;
+    }
+    .size7 {
+    width: 30%;
+}
+    .quote-box {
+  margin-top: 2%;
+  position: relative;
+  border: 1px solid rgba(171, 178, 191, 1);
+  padding: 2%;
+  font-size: 1.9vw;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+}
+.quote-box2 {
+  align-self: end;
+  border: 1px solid rgba(171, 178, 191, 1);
+  padding: 1%;
+  font-size: 1.8vw;
+  border-radius: 2px;
+  color: #fff;
+}
+ .log4 {
+        margin: 0;
+
+        height:auto;
+         position: absolute;
+        top: 1%;
+        z-index: 9;
+        left: 72%;
+        width: 22%;
+        transform: translate(-40%, -1%);
+    }
+    }
+    @media(max-width: 500px){
+         .size7 {
+    width: 35%;
+}
+.sic3 {
+            font-size: 2.5vw;
+        }
+    .sic {
+    font-size: 2.5vw;
+}   
+    .sub2 {
+        color: rgba(171, 178, 191, 1);
+        font-size: 2.1vw;
+        margin-top: 0;
+        margin-bottom: 2%;
+        text-align:start;
+        margin-left: 1%;
+        margin-right: 1%;
+        
+    }
+    .color2 {
+        font-size: 2.5vw;
+    }
+    .bott {
+        font-size: 2.5vw;
+    }
+    .linha {
+        padding: 0.1%;
+        background-color: rgba(199, 120, 221, 1);
+        border-radius: 60px;
+        width: 80%;
+    }
+    .no2 {
+        font-size: 3vw;
+    }
+      .trab {
+         margin-right: 0;
+         width: 40%;
+        }  
+        .size2{
+            width: 100% !important;
+        }
+        .metade {
+            width: 90%;
+        }
+        .quote-box2 {
+  align-self: end;
+  border: 1px solid rgba(171, 178, 191, 1);
+  padding: 1%;
+  font-size: 2.1vw;
+  border-radius: 2px;
+  color: #fff;
+}
+        .quote-box {
+  margin-top: 3%;
+  position: relative;
+  border: 1px solid rgba(171, 178, 191, 1);
+  padding: 2%;
+  font-size: 2.5vw;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+}
+    }
+   
+</style>
