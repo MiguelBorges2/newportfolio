@@ -40,7 +40,7 @@ onUnmounted(() => {
                     <img class="log4 " src="../assets/dots.svg">
                 </div>
             </div>
-            <div v-if="larguraTela<=1024" class="d-flex w-100 flex-column justify-content-start  align-items-center">
+            <div v-if="larguraTela<=1024" class="d-flex w-100 tamp flex-column justify-content-center align-items-center">
              <div class="d-flex  chao size align-items-start flex-column">
                 <p class="text-light push11  push4 hero">Miguel Borges de Rezende Costa</p>
                 <p class=" color push12 push4 hero">Desenvolvedor full-stack</p>
@@ -60,8 +60,7 @@ onUnmounted(() => {
                         <p class="text-light tips">Procurando emprego!</p>
                     </span>
               </div>
-            </div>
-             <div v-if="larguraTela>1024"  class="w-100 d-flex push2  justify-content-end">
+              <div v-if="larguraTela>1024"  class="w-100 d-flex push2  justify-content-end">
                     <span class="trab d-flex bg-dark justify-content-between">
                         <div class="square"></div>
                         <p class="text-light tips">Procurando emprego!</p>
@@ -75,12 +74,55 @@ onUnmounted(() => {
                     <p class="text-light no">-Satya Nadella</p>
                 </div>
             </div>
+            </div>
+             <div v-if="larguraTela>1024"  class="w-100 d-flex push2  justify-content-end">
+                    <span class="trab d-flex bg-dark justify-content-between">
+                        <div class="square"></div>
+                        <p class="text-light tips">Procurando emprego!</p>
+                    </span>
+              </div>
+            <div v-if="larguraTela>1024" class="metade d-flex flex-column justify-content-center align-items-center">
+                <div class="quote-box">
+                    <p class="text-light no">A tecnologia por si só não muda o mundo. São as pessoas que a constroem, com propósito, que fazem isso.</p>
+                </div>
+                <div class="quote-box2">
+                    <p class="text-light no">-Satya Nadella</p>
+                </div>
+            </div>
             <div class="w-100 push3 d-flex flex-column">
                 <div class="w-100 d-flex align-items-center justify-content-start">
                     <p class="text-light no2"><span class="hash">#</span>projetos</p>
                     <div class="linha"></div>   
                 </div>
-                <div class="w-100 d-flex push2 justify-content-around align-items-center"> 
+                <div v-if="larguraTela > 1024" class="w-100 d-flex push2 justify-content-around align-items-center"> 
+                    <a class="prog" href="https://reformacasa.facom.ufu.br/">
+                        <div class="projeto d-flex flex-column ">
+                        <img class="projpic" src="../assets/ct.png">
+                        <div class="stack d-flex justify-content-center">
+                            <p class="sub no3">HTML CSS Vue.js Node.js</p>
+                        </div>
+                         <div class="stack2 d-flex justify-content-center flex-column align-items-center">
+                            <p class="text-light no3 sic ">Reforma Na palma da mão</p>
+                            <p class=" sub2">Plataforma Web informativa sobre reformas. Desenvolvido em parceria com a FAU da UFU</p>
+                            <div class="chama d-flex text-light justify-content-center">Ativo</div>
+                        </div>  
+                    </div>
+                    </a>
+                    <a class="prog" href="https://casadaeternapaz.onrender.com/">
+                         <div class="projeto d-flex flex-column ">
+                        <img class="projpic" src="../assets/casa.png">
+                        <div class="stack d-flex justify-content-center">
+                            <p class="sub no3">HTML CSS Vue.js Node.js</p>
+                        </div>
+                         <div class="stack2 d-flex justify-content-center flex-column align-items-center">
+                            <p class="text-light no3 sic ">Site Imersivo (RPG de Mesa)</p>
+                            <p class="sub2 ">Aplicação web imersiva, simulando recrutamento para um culto fictício.</p>
+                            <div class="chama d-flex text-light justify-content-center">Ativo</div>
+                        </div>  
+                    </div>
+                    </a>
+                </div>
+                  <div v-if="larguraTela <= 1024" class="w-100 d-flex push2  flex-column justify-content-around align-items-center"> 
                     <a class="prog" href="https://reformacasa.facom.ufu.br/">
                         <div class="projeto d-flex flex-column ">
                         <img class="projpic" src="../assets/ct.png">
@@ -587,6 +629,9 @@ onUnmounted(() => {
         left: 18%;
         transform: translate(-1%, -60%);
     }
+    .tamp {
+        height: 100vh !important;
+    }
     .pic {
         margin: 0;
         width: 30%;
@@ -709,7 +754,7 @@ onUnmounted(() => {
     }
         .projpic {
     width: 100%;
-    height: 22vw;
+    height: 33vw;
     margin: 0 !important;
     padding: 0;
 }
@@ -748,7 +793,8 @@ onUnmounted(() => {
             width: 100% !important;
         }
          .prog {
-            width: 45%;
+            width: 75%;
+            margin-bottom: 4%;
          }
         
         .metade {
@@ -776,7 +822,7 @@ onUnmounted(() => {
         
     }
     .sub {
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .trab {
         margin-right: 0;
@@ -822,7 +868,7 @@ onUnmounted(() => {
         transform: translate(-40%, -10%);
     }
   .sic {
-    font-size: 2.5vw !important;
+    font-size: 3.3vw !important;
 }
     }
     @media(max-width: 500px){
@@ -874,11 +920,11 @@ onUnmounted(() => {
             font-size: 2.5vw;
         }
     .sic {
-    font-size: 2.5vw;
+    font-size: 4vw !important;
 }   
     .sub2 {
         color: rgba(171, 178, 191, 1);
-        font-size: 2.5vw;
+        font-size: 3.3vw;
         margin-top: 0;
         margin-bottom: 2%;
         text-align:start;
