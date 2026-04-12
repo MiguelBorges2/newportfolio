@@ -27,7 +27,7 @@ onUnmounted(() => {
              <div class="d-flex   size align-items-start flex-column">
                 <p class="text-light push4 hero">Miguel Borges de Rezende Costa</p>
                 <p class=" color push4 hero">Desenvolvedor full-stack</p>
-                <span class="sub push4">
+                <span class="sub3 push4">
                     Criando aplicações Web versáteis e aplicativos mobiles...
                 </span>
                 <button class="but push4 text-light">
@@ -40,11 +40,11 @@ onUnmounted(() => {
                     <img class="log4 " src="../assets/dots.svg">
                 </div>
             </div>
-            <div v-if="larguraTela<1024" class="d-flex w-100 flex-column justify-content-start  align-items-center">
+            <div v-if="larguraTela<=1024" class="d-flex w-100 flex-column justify-content-start  align-items-center">
              <div class="d-flex  chao size align-items-start flex-column">
                 <p class="text-light push11  push4 hero">Miguel Borges de Rezende Costa</p>
                 <p class=" color push12 push4 hero">Desenvolvedor full-stack</p>
-                <span class="sub push4">
+                <span class="sub3 push4">
                     Criando aplicações Web versáteis e aplicativos mobiles...
                 </span>
                 
@@ -54,7 +54,7 @@ onUnmounted(() => {
                     <img class="pic " src="../assets/pic2.png">
                     <img class="log4 " src="../assets/dots.svg">
                 </div>
-                 <div v-if="larguraTela<1024"  class="w-100 d-flex chao2  justify-content-center">
+                 <div v-if="larguraTela<=1024"  class="w-100 d-flex chao2  justify-content-center">
                     <span class="trab d-flex bg-dark justify-content-start">
                         <div class="square"></div>
                         <p class="text-light tips">Procurando emprego!</p>
@@ -76,7 +76,7 @@ onUnmounted(() => {
                 </div>
             </div>
             <div class="w-100 push3 d-flex flex-column">
-                <div class="w-100 d-flex align-items-center justify-content-between">
+                <div class="w-100 d-flex align-items-center justify-content-start">
                     <p class="text-light no2"><span class="hash">#</span>projetos</p>
                     <div class="linha"></div>   
                 </div>
@@ -108,7 +108,7 @@ onUnmounted(() => {
                     </div>
                     </a>
                 </div>
-                 <div  class="w-100 d-flex push2 align-items-center justify-content-between">
+                 <div  class="w-100 d-flex push2 align-items-center justify-content-start">
                     <p class="text-light no2"><span class="hash">#</span>skills</p>
                     <div class="linha"></div>   
                 </div>
@@ -167,7 +167,7 @@ onUnmounted(() => {
                         
                     </div>
                 </div>
-                 <div v-if="larguraTela < 1024"  class="w-100 d-flex justify-content-around rela">
+                 <div v-if="larguraTela <= 1024"  class="w-100 d-flex justify-content-around rela">
                     <div class="w-100 d-flex push30 align-items-around justify-content-between flex-wrap">
                         <div class="skill ">
                             <span class="text-light w-100 bott d-flex justify-content-center">
@@ -221,7 +221,7 @@ onUnmounted(() => {
                         
                     </div>
                 </div>
-                <div class="w-100 d-flex push2 align-items-center justify-content-between">
+                <div class="w-100 d-flex push2 align-items-center justify-content-start">
                     <p class="text-light no2"><span class="hash">#</span>Sobre mim</p>
                     <div class="linha"></div>   
                 </div>
@@ -240,7 +240,7 @@ onUnmounted(() => {
                         <img class="log3 " src="../assets/frame.svg">
                     </div>
                 </div>
-                <div v-if="larguraTela < 1024" class="w-100 d-flex flex-column">
+                <div v-if="larguraTela <= 1024" class="w-100 d-flex flex-column">
                     <div class="w-100  chao3 push30">
                         <p class="color2">Ola, eu sou o Miguel!</p>
                         <p class="color2">Sou desenvolvedor full-stack formado em Ciência da Computação pela UFU, com experiência prática no desenvolvimento de aplicações web e APIs RESTful.</p>
@@ -276,7 +276,7 @@ onUnmounted(() => {
                         </div>
                     </div>
                 </div>
-                <div v-if="larguraTela < 1024" class="w-100 d-flex justify-content-center flex-column align-items-center">
+                <div v-if="larguraTela <= 1024" class="w-100 d-flex justify-content-center flex-column align-items-center">
                     <p class="color2 push3  self w-100">Não exite em entrar em contato pelas redes sociais listadas ou dar uma olhada no meu GitHub!  </p>
                     <div class="size7 boxe push10 d-flex flex-column  align-items-center">
                         <div class="w-100  align-items-center d-flex">
@@ -343,6 +343,7 @@ onUnmounted(() => {
 .color2 {
     color: rgba(171, 178, 191, 1);
     margin:0;
+    text-align: justify;
 }
 .bott {
     border-bottom: 2px solid rgba(171, 178, 191, 1);
@@ -412,7 +413,7 @@ onUnmounted(() => {
     padding: 0.1%;
     background-color: rgba(199, 120, 221, 1);
     border-radius: 60px;
-    width: 88%;
+    width: 30%;
 }
 .no {
     margin: 0;
@@ -474,7 +475,7 @@ onUnmounted(() => {
   padding: 0 8px;
 }
 .chao {
-    margin-bottom: 28%;
+    margin-bottom: 45%;
 }
 .tips {
     margin: 0;
@@ -524,6 +525,10 @@ onUnmounted(() => {
         width: 30%;
     }
     .sub {
+        color: rgba(171, 178, 191, 1);
+        font-size:1.4vw;
+    }
+    .sub3 {
         color: rgba(171, 178, 191, 1);
         font-size:1.4vw;
     }
@@ -594,7 +599,7 @@ onUnmounted(() => {
      
     }
     .chao3 {
-        margin-bottom: 50%;
+        margin-bottom: 70%;
     }
     .log2 {
         margin: 0;
@@ -647,56 +652,60 @@ onUnmounted(() => {
     border: 2px solid rgba(171, 178, 191, 1);
     margin-bottom: 2%;
 }
-    
+    .img{
+        width:100%;
+    }
         .icone {
           width: 10%;
         }
         .pic2 {
         margin: 0;
-        width: 30%;
+        width: 42%;
         height: auto;
         position: absolute;
         z-index: 10;
         top: 5%;
         left: 50%;
-        transform: translate(-50%, -95%);
+        transform: translate(-50%, -100%);
      
     }
     .log2 {
         margin: 0;
-        width: 15%;
+        width: 17%;
         height:auto;
          position: absolute;
         top: 2%;
         left: 38%;
         z-index: 9;
-        transform: translate(-30%, -250%);
+        transform: translate(-50%, -370%);
     }
-    
+    .push4 {
+        margin-left: 1%;
+    }
     .log3 {
         margin: 0;
-        width: 15%;
+        width: 20%;
         height:auto;
          position: absolute;
         top: 90%;
         z-index: 11;
         left: 70%;
-        transform: translate(-60%, -90%);
+        transform: translate(-40%, -100%);
     }
     .color2 {
-        font-size: 1.8vw;
+        font-size: 2.2vw;
     }
     .bott {
-        font-size: 2vw;
+        font-size: 2.6vw;
     }
         .linha {
     padding: 0.1%;
     background-color: rgba(199, 120, 221, 1);
     border-radius: 60px;
-    width: 88%;
+   
 }
     .no2 {
-        font-size: 1.8vw;
+        font-size: 2.2vw;
     }
         .projpic {
     width: 100%;
@@ -714,7 +723,7 @@ onUnmounted(() => {
 }
 .sub2 {
         color: rgba(171, 178, 191, 1);
-        font-size: 1.7vw;
+        font-size: 2.2vw;
         margin-top: 0;
         margin-bottom: 2%;
         text-align:start;
@@ -722,20 +731,18 @@ onUnmounted(() => {
         margin-right: 1%;
         
     }
-.sic {
-    font-size: 1.9vw;
-}
+
 .rela {
     position: relative;
 }
 .log {
-        width: 32%;
+        width: 20%;
         height:auto;
          position: absolute;
         margin: 0;
-        top: 50%;
-        left: 18%;
-        transform: translate(-1%, -60%);
+        top: 40%;
+        left: 30%;
+        transform: translate(-40%, -80%);
     }
         .size2{
             width: 100% !important;
@@ -749,23 +756,27 @@ onUnmounted(() => {
         }
         .pic {
         margin: 0;
-        width: 45%;
+        width: 30%;
         height: auto;
         position: absolute;
         z-index: 10;
         top: 100%;
         left: 50%;
-        transform: translate(-50%, -65%);
+        transform: translate(-50%, -75%);
      
     }
     .hero {
-        font-size: 4.3vw;
+        font-size: 5vw;
     }
     .size {
         width: 100%;
     }
+    .sub3 {
+        font-size: 3vw;
+        
+    }
     .sub {
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
     .trab {
         margin-right: 0;
@@ -778,12 +789,15 @@ onUnmounted(() => {
     .size7 {
     width: 30%;
 }
+.metade {
+            width: 95%;
+        }
     .quote-box {
   margin-top: 2%;
   position: relative;
   border: 1px solid rgba(171, 178, 191, 1);
   padding: 2%;
-  font-size: 1.9vw;
+  font-size: 2.7vw;
   border-radius: 2px;
   color: #fff;
   text-align: center;
@@ -792,7 +806,7 @@ onUnmounted(() => {
   align-self: end;
   border: 1px solid rgba(171, 178, 191, 1);
   padding: 1%;
-  font-size: 1.8vw;
+  font-size: 2.5vw;
   border-radius: 2px;
   color: #fff;
 }
@@ -801,14 +815,58 @@ onUnmounted(() => {
 
         height:auto;
          position: absolute;
-        top: 1%;
+        top: 5%;
         z-index: 9;
         left: 72%;
-        width: 22%;
-        transform: translate(-40%, -1%);
+        width: 15%;
+        transform: translate(-40%, -10%);
     }
+  .sic {
+    font-size: 2.5vw !important;
+}
     }
     @media(max-width: 500px){
+        .log {
+        width: 25%;
+        height:auto;
+         position: absolute;
+        margin: 0;
+        top: 10%;
+        left: 30%;
+        transform: translate(-40%, -105%);
+    }
+        .log4 {
+        margin: 0;
+
+        height:auto;
+         position: absolute;
+        top: 5%;
+        z-index:11;
+        left: 72%;
+        width: 18%;
+        transform: translate(-40%, -10%);
+    }
+        .pic {
+        margin: 0;
+        width: 38%;
+        height: auto;
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -75%);
+     
+    }
+        .chao {
+            margin-bottom: 60%;
+        }
+         .hero {
+        font-size: 5vw;
+    }
+    .sub3 {
+        font-size: 3.5vw;
+        
+    }
          .size7 {
     width: 35%;
 }
@@ -820,7 +878,7 @@ onUnmounted(() => {
 }   
     .sub2 {
         color: rgba(171, 178, 191, 1);
-        font-size: 2.1vw;
+        font-size: 2.5vw;
         margin-top: 0;
         margin-bottom: 2%;
         text-align:start;
@@ -829,16 +887,16 @@ onUnmounted(() => {
         
     }
     .color2 {
-        font-size: 2.5vw;
+        font-size: 2.8vw;
     }
     .bott {
-        font-size: 2.5vw;
+        font-size: 3.2vw;
     }
     .linha {
         padding: 0.1%;
         background-color: rgba(199, 120, 221, 1);
         border-radius: 60px;
-        width: 80%;
+    
     }
     .no2 {
         font-size: 3vw;
@@ -851,13 +909,13 @@ onUnmounted(() => {
             width: 100% !important;
         }
         .metade {
-            width: 90%;
+            width: 95%;
         }
         .quote-box2 {
   align-self: end;
   border: 1px solid rgba(171, 178, 191, 1);
   padding: 1%;
-  font-size: 2.1vw;
+  font-size: 2.5vw;
   border-radius: 2px;
   color: #fff;
 }
@@ -865,12 +923,15 @@ onUnmounted(() => {
   margin-top: 3%;
   position: relative;
   border: 1px solid rgba(171, 178, 191, 1);
-  padding: 2%;
-  font-size: 2.5vw;
+  padding: 1%;
+  font-size: 2.7vw;
   border-radius: 2px;
   color: #fff;
   text-align: center;
 }
+.chao2 {
+        margin-top: 23%;
+    }
     }
    
 </style>
