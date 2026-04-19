@@ -33,7 +33,7 @@
     }
     @media(max-width: 1024px){
         .nostyle {
-        font-size: 1.6vw;
+        font-size: 1.8vh;
         list-style: none;
         margin-top: 1%;
         margin-bottom: 0;
@@ -42,7 +42,7 @@
     }
     @media(max-width: 600px){
         .nostyle {
-        font-size: 3.2vw;
+        font-size: 3.5vw;
         list-style: none;
         margin-top: 1%;
         margin-bottom: 0;
