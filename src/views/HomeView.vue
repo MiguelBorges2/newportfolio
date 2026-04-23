@@ -118,7 +118,7 @@ onUnmounted(() => {
                 </div>
             </div>
             <div class="w-100 push3 d-flex flex-column">
-                <div class="w-100 d-flex align-items-center justify-content-start">
+                <div id="projetos" class="w-100 d-flex align-items-center justify-content-start">
                     <p class="text-light no2"><span class="hash">#</span>projetos</p>
                     <div class="linha"></div>   
                 </div>
@@ -178,8 +178,8 @@ onUnmounted(() => {
                     </div>
                     </a>
                 </div>
-                 <div  class="w-100 d-flex push2 align-items-center justify-content-start">
-                    <p class="text-light no2"><span class="hash">#</span>skills</p>
+                 <div id="skills" class="w-100 d-flex push2 align-items-center justify-content-start">
+                    <p  class="text-light no2"><span class="hash">#</span>skills</p>
                     <div class="linha"></div>   
                 </div>
                 <div v-if="larguraTela > 1024"  class="w-100 d-flex justify-content-around ">
@@ -297,7 +297,7 @@ onUnmounted(() => {
                     </div>
                 </div>
                 <div class="w-100 d-flex push2 align-items-center justify-content-start">
-                    <p class="text-light no2"><span class="hash">#</span>Sobre mim</p>
+                    <p id="sobre" class="text-light no2"><span class="hash">#</span>Sobre mim</p>
                     <div class="linha"></div>   
                 </div>
                 <div v-if="larguraTela > 1024" class="w-100 d-flex">
@@ -331,7 +331,7 @@ onUnmounted(() => {
                     </div>
                 </div>
                 <div class="w-100 d-flex push2 align-items-center justify-content-start">
-                    <p class="text-light no2"><span class="hash">#</span>contato</p>
+                    <p id="contatos" class="text-light no2"><span class="hash">#</span>contato</p>
                     <div class="linha"></div>   
                 </div>
                 <div v-if="larguraTela>1024" class="w-100 d-flex justify-content-between">
@@ -364,7 +364,7 @@ onUnmounted(() => {
                         </div>
                         <div class="w-100  align-items-center d-flex">
                             <img class="icone" src="../assets/git.svg">
-                            <p class="text-light sic3 m-0">(34) 98442-3034</p>
+                            <p class="text-light sic3 m-0">MiguelBorges2</p>
                         </div>
                     </div>
                 </div>
@@ -795,7 +795,7 @@ onUnmounted(() => {
         width: 17%;
         height:auto;
          position: absolute;
-        top: 90%;
+        top: 90%;   
         z-index: 11;
         left: 70%;
         transform: translate(-80%, -200%);
@@ -1032,10 +1032,10 @@ onUnmounted(() => {
     
     }
          .size7 {
-    width: 35%;
+    width: 45%;
 }
 .sic3 {
-            font-size: 2.5vw;
+            font-size: 3vw;
         }
     .sic {
     font-size: 3.5vw !important;
@@ -1063,7 +1063,7 @@ onUnmounted(() => {
     
     }
       .tamp {
-        height: 85vh !important;
+        height: 95vh !important;
     }
     .no2 {
         font-size: 3vw;
@@ -1105,6 +1105,19 @@ onUnmounted(() => {
 }
     }
 @media(max-height: 600px){
+    .sub {
+        font-size: 2.3vh;
+    }
+       .projpic {
+    width: 100%;
+    height: 27vw;
+    margin: 0 !important;
+    padding: 0;
+}
+     .prog {
+            width: 60vw;
+            margin-bottom: 4%;
+         }
     .teto2 {
         margin-top: 10vh !important;
     }
@@ -1175,7 +1188,7 @@ onUnmounted(() => {
         
     }
          .size7 {
-    width: 35%;
+    width: 45%;
 }
 .sic3 {
             font-size: 2.5vw;
@@ -1194,7 +1207,7 @@ onUnmounted(() => {
         
     }
     .color2 {
-        font-size: 2.8vw;
+        font-size: 3.5vw;
     }
     .bott {
         font-size: 3.2vw;
@@ -1303,7 +1316,7 @@ onUnmounted(() => {
         
     }
          .size7 {
-    width: 35%;
+    width: 50%;
 }
 .sic3 {
             font-size: 2.5vw;
