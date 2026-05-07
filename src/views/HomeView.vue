@@ -302,7 +302,7 @@ onUnmounted(() => {
                 </div>
                 <div v-if="larguraTela > 1024" class="w-100 d-flex">
                     <div class="meia push30">
-                        <p class="color2">Ola, eu sou o Miguel!</p>
+                        <p class="color2">Olá, eu sou o Miguel!</p>
                         <p class="color2">Sou desenvolvedor full-stack formado em Ciência da Computação pela UFU, com experiência prática no desenvolvimento de aplicações web e APIs RESTful.</p>
                         <p class="color2">Atuei como estagiário na Algar Telecom e como desenvolvedor full-stack júnior na Telek Sistemas, trabalhando com sistemas reais, integrações e comunicação entre serviços.</p>
                         <p class="color2 push3">Trabalho principalmente com Vue.js no frontend e Node.js no backend, desenvolvendo soluções completas, modernas e focadas em performance e usabilidade.</p>
@@ -317,7 +317,7 @@ onUnmounted(() => {
                 </div>
                 <div v-if="larguraTela <= 1024" class="w-100 d-flex flex-column">
                     <div class="w-100  chao3 push30">
-                        <p class="color2">Ola, eu sou o Miguel!</p>
+                        <p class="color2">Olá, eu sou o Miguel!</p>
                         <p class="color2">Sou desenvolvedor full-stack formado em Ciência da Computação pela UFU, com experiência prática no desenvolvimento de aplicações web e APIs RESTful.</p>
                         <p class="color2">Atuei como estagiário na Algar Telecom e como desenvolvedor full-stack júnior na Telek Sistemas, trabalhando com sistemas reais, integrações e comunicação entre serviços.</p>
                         <p class="color2 push3">Trabalho principalmente com Vue.js no frontend e Node.js no backend, desenvolvendo soluções completas, modernas e focadas em performance e usabilidade.</p>
@@ -335,7 +335,7 @@ onUnmounted(() => {
                     <div class="linha"></div>   
                 </div>
                 <div v-if="larguraTela>1024" class="w-100 d-flex justify-content-between">
-                    <p class="color2 push3  self meia">Não exite em entrar em contato pelas redes sociais listadas ou dar uma olhada no meu GitHub!  </p>
+                    <p class="color2 push3  self meia">Não hesite em entrar em contato pelas redes sociais listadas ou dar uma olhada no meu GitHub!  </p>
                     <div class="size7 boxe push10 d-flex flex-column  align-items-center">
                         <div class="w-100  align-items-center d-flex">
                             <img class="icone" src="../assets/email.svg">
@@ -345,14 +345,14 @@ onUnmounted(() => {
                             <img class="icone" src="../assets/zapzap.svg">
                             <p class="text-light m-0">(34) 98442-3034</p> 
                         </div>
-                        <div class="w-100  align-items-center d-flex">
+                        <div class="w-100  align-itsems-center d-flex">
                             <img class="icone" src="../assets/git.svg">
                             <p class="text-light m-0">(34) 98442-3034</p>
                         </div>
                     </div>
                 </div>
                 <div v-if="larguraTela <= 1024" class="w-100 d-flex justify-content-center flex-column align-items-center">
-                    <p class="color2 push3  self w-100">Não exite em entrar em contato pelas redes sociais listadas ou dar uma olhada no meu GitHub!  </p>
+                    <p class="color2 push3  self w-100">Não hesite em entrar em contato pelas redes sociais listadas ou dar uma olhada no meu GitHub!  </p>
                     <div class="size7 boxe push10 d-flex flex-column  align-items-center">
                         <div class="w-100  align-items-center d-flex">
                             <img class="icone" src="../assets/email.svg">
