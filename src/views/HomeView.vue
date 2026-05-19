@@ -938,7 +938,7 @@ onUnmounted(() => {
         transform: translate(-90%, 50%);
     }
     .tamp {
-        height: 100dvh !important;
+        min-height: 100dvh !important;
     }
   .sic {
     font-size: 2.5vw !important;
