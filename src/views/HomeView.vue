@@ -16,7 +16,7 @@ onUnmounted(() => {
 </script>
    
 <template>
-    <div class="d-flex justify-conten=hao2t-center big w-100">
+    <div class="d-flex justify-content-center big w-100">
         <div v-if="larguraTela>1024"class="d-flex  sic2 flex-column justify-content-around">
              <img class="ornamento" src="../assets/dots.svg">
              <img class="ornamento" src="../assets/rectangle.svg">
@@ -1063,7 +1063,7 @@ onUnmounted(() => {
     
     }
       .tamp {
-        height: 95vh !important;
+        min-height: 95vh !important;
     }
     .no2 {
         font-size: 3vw;
@@ -1260,7 +1260,7 @@ onUnmounted(() => {
         margin-top: 0;
     }
     .tamp {
-        height: 92vh !important;
+        min-height: 92vh !important;
     }
     .tips {
         font-size: 3.5vw;
