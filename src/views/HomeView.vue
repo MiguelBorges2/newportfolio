@@ -553,9 +553,7 @@ onUnmounted(() => {
 .chao4 {
     margin-bottom: 3%;
 }
-.chao {
-    margin-bottom: 7%;
-}
+
 .chups {
     margin-bottom: 45%;
 }
@@ -647,6 +645,7 @@ onUnmounted(() => {
     .ornamento10 {
         width: 100%;
         color: rgba(199, 120, 221, 1);
+        
     }
     .teto {
         margin-top: 5%;
@@ -752,6 +751,199 @@ onUnmounted(() => {
      
     }
     @media(max-width: 1024px){
+        .sic3 {
+            font-size: 1.7vw;
+        }
+        .skill {
+    width: 20%;
+    border: 2px solid rgba(171, 178, 191, 1);
+    margin-bottom: 2%;
+}
+    .img{
+        width:100%;
+    }
+        .icone {
+          width: 10%;
+        }
+        .pic2 {
+        margin: 0;
+        width: 32%;
+        height: auto;
+        position: absolute;
+        z-index: 10;
+        top: 2%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+     
+    }
+    .log2 {
+        margin: 0;
+        width: 14%;
+        height:auto;
+         position: absolute;
+        top: 2%;
+        left: 38%;
+        z-index: 9;
+        transform: translate(-50%, -450%);
+    }
+    .push4 {
+        margin-left: 1%;
+    }
+    .log3 {
+        margin: 0;
+        width: 17%;
+        height:auto;
+         position: absolute;
+        top: 90%;   
+        z-index: 11;
+        left: 70%;
+        transform: translate(-80%, -200%);
+    }
+    .color2 {
+        font-size: 1.3vw;
+    }
+    .bott {
+        font-size: 1.5vw;
+    }
+        .linha {
+    padding: 0.1%;
+    background-color: rgba(199, 120, 221, 1);
+    border-radius: 60px;
+   
+}
+    .no2 {
+        font-size: 1.5vw;
+    }
+        .projpic {
+    width: 100%;
+    height: 20vw;
+    margin: 0 !important;
+    padding: 0;
+}
+.detail {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+.sub2 {
+        color: rgba(171, 178, 191, 1);
+        font-size: 1.5vw;
+        margin-top: 0;
+        margin-bottom: 2%;
+        text-align:start;
+        margin-left: 1%;
+        margin-right: 1%;
+        
+    }
+
+.rela {
+    position: relative;
+}
+.log {
+        width: 20%;
+        height:auto;
+         position: absolute;
+        margin: 0;
+        top: 40%;
+        left: 30%;
+        transform: translate(-20%, -65%);
+    }
+        .size2{
+            width: 100% !important;
+        }
+         .prog {
+            width: 35%;
+            margin-bottom: 4%;
+         }
+        
+        .metade {
+            width: 70%;
+        }
+        .pic {
+        margin: 0;
+        width: 30%;
+        height: auto;
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+     
+    }
+    .hero {
+        font-size: 3vw;
+    }
+    .hero2 {
+        font-size: 2.5vw;
+    }
+    .size {
+        width: 100%;
+    }
+    .sub3 {
+        font-size: 2vw;
+        text-align:center;
+        
+    }
+    .sub {
+        font-size: 1.5vw;
+    }
+    .trab {
+        margin-left: 14%;
+        width: 35%;
+    }
+    .tips {
+        font-size: 2vw;
+        margin-right: 2%;
+    }
+    .size7 {
+    width: 30%;
+}
+    .push30 {
+        margin-bottom: 63%;
+    }
+.metade {
+            width:80%;
+        }
+    .quote-box {
+  margin-top: 2%;
+  position: relative;
+  border: 1px solid rgba(171, 178, 191, 1);
+  padding: 1%;
+  font-size: 1.5vw;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+}
+.quote-box2 {
+  align-self: end;
+  border: 1px solid rgba(171, 178, 191, 1);
+  padding: 1%;
+  font-size: 1.3vw;
+  border-radius: 2px;
+  color: #fff;
+}
+ .log4 {
+        margin: 0;
+
+        height:auto;
+         position: absolute;
+        top: 98%;
+        z-index: 12;
+        left: 72%;
+        width: 12%;
+        transform: translate(-90%, 50%);
+    }
+    .tamp {
+        min-height: 100dvh !important;
+    }
+  .sic {
+    font-size: 2vw !important;
+}
+    }
+   @media(max-width: 800px){
         .sic3 {
             font-size: 2.2vw;
         }
@@ -875,10 +1067,10 @@ onUnmounted(() => {
      
     }
     .hero {
-        font-size: 8.5vw;
+        font-size: 5vw;
     }
     .hero2 {
-        font-size: 6vw;
+        font-size: 3vw;
     }
     .size {
         width: 100%;
@@ -913,7 +1105,7 @@ onUnmounted(() => {
   position: relative;
   border: 1px solid rgba(171, 178, 191, 1);
   padding: 1%;
-  font-size: 2.7vw;
+  font-size: 2vw;
   border-radius: 2px;
   color: #fff;
   text-align: center;
@@ -922,7 +1114,7 @@ onUnmounted(() => {
   align-self: end;
   border: 1px solid rgba(171, 178, 191, 1);
   padding: 1%;
-  font-size: 2.6vw;
+  font-size: 1.8vw;
   border-radius: 2px;
   color: #fff;
 }
@@ -937,15 +1129,167 @@ onUnmounted(() => {
         width: 12%;
         transform: translate(-90%, 50%);
     }
-    .tamp {
-        min-height: 100dvh !important;
-    }
+    
   .sic {
     font-size: 2.5vw !important;
 }
     }
-   
-    @media(max-width: 500px){
+      @media(max-width: 604px){
+    .push30 {
+        margin-bottom: 75%;
+    }
+     .pic2 {
+        margin: 0;
+        width: 42%;
+        height: auto;
+        position: absolute;
+        z-index: 10;
+        top: 2%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+     
+    }
+        .skill {
+    width: 40%;
+    border: 2px solid rgba(171, 178, 191, 1);
+    margin-bottom: 2%;
+}
+         .prog {
+            width: 50%;
+            margin-bottom: 4%;
+         }
+        .tips {
+        font-size: 3.5vw;
+        margin-right: 2%;
+    }
+    .teto {
+        margin-top: 10%;
+    }
+    .floor {
+        margin-bottom: 10%;
+    }
+        .log {
+        width: 25%;
+        height:auto;
+         position: absolute;
+        margin: 0;
+        top: 10%;
+        left: 30%;
+        transform: translate(-40%, -105%);
+    }
+        .log4 {
+        margin: 0;
+
+        height:auto;
+         position: absolute;
+        top: 5%;
+        z-index:11;
+        left: 72%;
+        width: 18%;
+        transform: translate(-40%, -10%);
+    }
+        .pic {
+        margin: 0;
+        width: 45%;
+        height: auto;
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -75%);
+     
+    }
+        
+        .chups {
+            margin-bottom: 52%;
+        }
+        .hero {
+            font-size: 5vw;
+        }
+         .hero2 {
+        font-size: 3.5vw;
+    }
+    .sub {
+        font-size: 2.5vw;
+    }
+    .sub3 {
+        font-size: 3vw;
+        margin-top:1%;
+        margin-bottom: 2%;
+    
+    }
+         .size7 {
+    width: 45%;
+}
+.sic3 {
+            font-size: 2vw;
+        }
+    .sic {
+    font-size: 3.5vw !important;
+}   
+    .sub2 {
+        color: rgba(171, 178, 191, 1);
+        font-size: 2.5vw;
+        margin-top: 0;
+        margin-bottom: 2%;
+        text-align:start;
+        margin-left: 1%;
+        margin-right: 1%;
+        
+    }
+    .color2 {
+        font-size: 2.5vw;
+    }
+    .bott {
+        font-size: 3.2vw;
+    }
+    .linha {
+        padding: 0.1%;
+        background-color: rgba(199, 120, 221, 1);
+        border-radius: 60px;
+    
+    }
+    
+    .no2 {
+        font-size: 3vw;
+    }
+      .trab {
+         margin-left: 15%;
+         width: 55%;
+        }  
+        .size2{
+            width: 100% !important;
+        }
+        .metade {
+            width: 95%;
+        }
+        .quote-box2 {
+  align-self: end;
+  border: 1px solid rgba(171, 178, 191, 1);
+  padding: 1%;
+  font-size: 2.2vw;
+  border-radius: 2px;
+  color: #fff;
+}
+        .quote-box {
+
+  position: relative;
+  border: 1px solid rgba(171, 178, 191, 1);
+  padding-top: 1%;
+  font-size: 2.5vw;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+}
+.chao2 {
+      margin-top: 23%; 
+    
+    }
+.ornamento-svg {
+    width: 80%;
+}
+    }
+    @media(max-width: 480px){
     .push30 {
         margin-bottom: 75%;
     }
@@ -1010,9 +1354,7 @@ onUnmounted(() => {
         transform: translate(-50%, -75%);
      
     }
-        .chao {
-            margin-bottom: 20%;
-        }
+       
         .chups {
             margin-bottom: 52%;
         }
@@ -1062,9 +1404,7 @@ onUnmounted(() => {
         border-radius: 60px;
     
     }
-      .tamp {
-        min-height: 95vh !important;
-    }
+      
     .no2 {
         font-size: 3vw;
     }
@@ -1104,283 +1444,5 @@ onUnmounted(() => {
     width: 80%;
 }
     }
-@media(max-height: 600px){
-    .sub {
-        font-size: 2.3vh;
-    }
-       .projpic {
-    width: 100%;
-    height: 27vw;
-    margin: 0 !important;
-    padding: 0;
-}
-     .prog {
-            width: 60vw;
-            margin-bottom: 4%;
-         }
-    .teto2 {
-        margin-top: 10vh !important;
-    }
-    .tamp {
-        height: 100% !important;
-    }
-     .teto {
-        margin-top: 10vh;
-    }
-    .floor {
-        margin-bottom: 10vh;
-    }
-    .ornamento-svg {
-        width: 70vh;
-    }
-        
-    .tips {
-        font-size: 3.5vw;
-        margin-right: 2%;
-    }
-        .log {
-        width: 23%;
-        height:auto;
-         position: absolute;
-        margin: 0;
-        top: 10%;
-        left: 33%;
-        transform: translate(-40%, -105%);
-    }
-        .log4 {
-        margin: 0;
-
-        height:auto;
-         position: absolute;
-        top: 5%;
-        z-index:11;
-        left: 68%;
-        width: 17%;
-        transform: translate(-40%, -10%);
-    }
-        .pic {
-        margin: 0;
-        width: 39%;
-        height: auto;
-        position: absolute;
-        z-index: 10;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -75%);
-     
-    }
-        .chao {
-            margin-bottom: 1vh;
-        }
-        .chups {
-            margin-bottom: 30%;
-        }
-        .hero {
-            font-size: 6vh;
-        }
-         .hero2 {
-        font-size: 3.5vh;
-    }
-    .sub3 {
-        font-size: 2.3vh;
-        margin-top:0;
-        margin-bottom: 2%;
-        
-    }
-         .size7 {
-    width: 45%;
-}
-.sic3 {
-            font-size: 2.5vw;
-        }
-    .sic {
-    font-size: 4vw !important;
-}   
-    .sub2 {
-        color: rgba(171, 178, 191, 1);
-        font-size: 3.3vw;
-        margin-top: 0;
-        margin-bottom: 2%;
-        text-align:start;
-        margin-left: 1%;
-        margin-right: 1%;
-        
-    }
-    .color2 {
-        font-size: 3.5vw;
-    }
-    .bott {
-        font-size: 3.2vw;
-    }
-    .linha {
-        padding: 0.1%;
-        background-color: rgba(199, 120, 221, 1);
-        border-radius: 60px;
-    
-    }
-    .no2 {
-        font-size: 3vw;
-    }
-      .trab {
-         margin-right: 0;
-         width: 55%;
-        }  
-        .size2{
-            width: 100% !important;
-        }
-        .metade {
-            width: 95%;
-        }
-        .quote-box2 {
-  align-self: end;
-  border: 1px solid rgba(171, 178, 191, 1);
-  padding: 1%;
-  font-size: 2vh;
-  border-radius: 2px;
-  color: #fff;
-}
-        .quote-box {
-
-  position: relative;
-  border: 1px solid rgba(171, 178, 191, 1);
-  padding-top: 2%;
-  font-size: 2vh;
-  border-radius: 2px;
-  color: #fff;
-  text-align: center;
-}
-.chao2 {
-      margin-top: 22%; 
-
-    }
-}
-
-@media(max-height: 480px){
-    .teto2 {
-        margin-top: 0;
-    }
-    .tamp {
-        min-height: 92vh !important;
-    }
-    .tips {
-        font-size: 3.5vw;
-        margin-right: 2%;
-    }
-        .log {
-        width: 23%;
-        height:auto;
-         position: absolute;
-        margin: 0;
-        top: 10%;
-        left: 33%;
-        transform: translate(-40%, -105%);
-    }
-        .log4 {
-        margin: 0;
-
-        height:auto;
-         position: absolute;
-        top: 5%;
-        z-index:11;
-        left: 68%;
-        width: 17%;
-        transform: translate(-40%, -10%);
-    }
-        .pic {
-        margin: 0;
-        width: 32%;
-        height: auto;
-        position: absolute;
-        z-index: 10;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -75%);
-     
-    }
-        .chao {
-            margin-bottom: 2%;
-        }
-        .chups {
-            margin-bottom: 30%;
-        }
-        .hero {
-            font-size: 7vw;
-        }
-         .hero2 {
-        font-size: 6.5vw;
-    }
-    .sub3 {
-        font-size: 4.2vw;
-        margin-top:0;
-        margin-bottom: 2%;
-        
-    }
-         .size7 {
-    width: 50%;
-}
-.sic3 {
-            font-size: 2.5vw;
-        }
-    .sic {
-    font-size: 4vw !important;
-}   
-    .sub2 {
-        color: rgba(171, 178, 191, 1);
-        font-size: 3.3vw;
-        margin-top: 0;
-        margin-bottom: 2%;
-        text-align:start;
-        margin-left: 1%;
-        margin-right: 1%;
-        
-    }
-    .color2 {
-        font-size: 2.8vw;
-    }
-    .bott {
-        font-size: 3.2vw;
-    }
-    .linha {
-        padding: 0.1%;
-        background-color: rgba(199, 120, 221, 1);
-        border-radius: 60px;
-    
-    }
-    .no2 {
-        font-size: 3vw;
-    }
-      .trab {
-         margin-left: 3%;
-         width: 55%;
-        }  
-        .size2{
-            width: 100% !important;
-        }
-        .metade {
-            width: 95%;
-        }
-        .quote-box2 {
-  align-self: end;
-  border: 1px solid rgba(171, 178, 191, 1);
-  padding: 1%;
-  font-size: 3vw;
-  border-radius: 2px;
-  color: #fff;
-}
-        .quote-box {
-
-  position: relative;
-  border: 1px solid rgba(171, 178, 191, 1);
-  padding-top: 2%;
-  font-size: 3.3vw;
-  border-radius: 2px;
-  color: #fff;
-  text-align: center;
-}
-.chao2 {
-      margin-top:17%; 
-      
-    }
-}
 
 </style>

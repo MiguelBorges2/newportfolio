@@ -46,14 +46,30 @@
     }
     @media(max-width: 1024px){
         .nostyle {
-        font-size: 1.8vh;
+        font-size: 1.8vw;
         list-style: none;
         margin-top: 1%;
         margin-bottom: 0;
     }
 
     }
-    @media(max-width: 600px){
+    @media(max-width: 800px){
+        .nostyle {
+        font-size: 2vw;
+        list-style: none;
+        margin-top: 1%;
+        margin-bottom: 0;
+    }
+}
+    @media(max-width: 604px){
+        .nostyle {
+        font-size: 2.2vw;
+        list-style: none;
+        margin-top: 1%;
+        margin-bottom: 0;
+    }
+}
+    @media(max-width: 480px){
         .nostyle {
         font-size: 3vw;
         list-style: none;
